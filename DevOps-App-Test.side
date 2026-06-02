@@ -1,0 +1,116 @@
+{
+  "id": "2851018c-5801-4de0-a5cf-1635852ad323",
+  "version": "2.0",
+  "name": "DevOps-App-Test",
+  "url": "https://devops-tomcat-app.onrender.com",
+  "tests": [{
+    "id": "c8c96935-2410-4a6f-9b08-20a0c6ae80b1",
+    "name": "MainPageTest",
+    "commands": [{
+      "id": "d0967f9b-d34f-4e20-a5e8-5d2765692afc",
+      "comment": "",
+      "command": "open",
+      "target": "/MatanGuyShiranNadavWalid/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "58228d1c-f756-4b7c-b2da-ba1ef825621f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1090x672",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3bedb7cf-a820-4073-a459-6bb225994702",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Simple Web App",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "93cd8312-18da-4c75-84ca-836ef614c5be",
+      "comment": "",
+      "command": "click",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Welcome to My Simple Web Application')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c3ffc8b-9b22-45b6-ada2-43edc77ef821",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Welcome to My Simple Web Application')]", "xpath:innerText"]
+      ],
+      "value": "Welcome to My Simple Web Application"
+    }, {
+      "id": "4fc05563-5bd0-41a6-896b-df61b8468f70",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Click Me!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2daac01d-4e71-4405-bf1e-0a0b3a86b060",
+      "comment": "",
+      "command": "click",
+      "target": "id=userInput",
+      "targets": [
+        ["id=userInput", "id"],
+        ["name=userInput", "name"],
+        ["css=#userInput", "css:finder"],
+        ["xpath=//input[@id='userInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9c85c75-2f2d-4d0d-86db-96509da61981",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=userInput",
+      "targets": [
+        ["id=userInput", "id"],
+        ["name=userInput", "name"],
+        ["css=#userInput", "css:finder"],
+        ["xpath=//input[@id='userInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "14be99fc-7214-42cf-8f8b-de36e42c45ba",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Go to GitHub",
+      "targets": [
+        ["linkText=Go to GitHub", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Go to GitHub')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://github.com')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Go to GitHub')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "019d2dc3-3493-4dc7-9591-c681f9eac48c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c8c96935-2410-4a6f-9b08-20a0c6ae80b1"]
+  }],
+  "urls": ["https://devops-tomcat-app.onrender.com/"],
+  "plugins": []
+}
