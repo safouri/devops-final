@@ -4,7 +4,7 @@
     <title>Simple Web App</title>
 </head>
 <body>
-    <h2>Welcome to My Simple Web Application</h2>
+    <h2>Welcome to My Simple Web Application!!</h2>
 
     <form action="" method="get">
         <label for="userInput">Enter something:</label>
